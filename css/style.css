@@ -85,6 +85,10 @@ img {
     background-color: var(--color-secondary);
 }
 
+.bg-transparent {
+    background-color: transparent;
+}
+
 .text-center {
     text-align: center;
 }
@@ -113,13 +117,19 @@ img {
     text-transform: uppercase;
 }
 
+.box-shadow {
+    box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+}
+
 /* Navbar related CSS */
 .navbar {
     padding: 25px;
-    background-color: transparent;
-    position: absolute;
+    position: fixed;
+    width: 100%;
     top: 0;
     right: 0;
+    z-index: 100;
+    transition: .5s;
 }
 
 .navbar>ul {
