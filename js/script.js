@@ -8,13 +8,10 @@ menuButton.addEventListener('click', () => {
     isMenuOpen = !isMenuOpen;
 
     if (isMenuOpen) {
-        menu.classList.remove('menu-close')
-        menu.classList.add('menu-open')
+        menu.classList.remove('hidden')
         menuButton.innerHTML = `<i class="fas fa-times"></i>`
     } else {
-        menu.classList.remove('menu-open')
-        menu.classList.add('menu-close')
+        menu.classList.add('hidden')
         menuButton.innerHTML = `<i class="fas fa-bars"></i>`
     }
 })
-
